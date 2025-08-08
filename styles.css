@@ -1,50 +1,51 @@
 :root {
-    --cor-principal: #6E859F;
-    --cor-secundaria: #284260;
-    --cor-destaque: #C92BFC;
+  --cor-principal: #6E859F;
+  --cor-secundaria: #284260;
+  --cor-destaque: #C92BFC;
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
+  background-color: #121212; /* Fundo escuro */
+  color: #f1f1f1;
 }
 
-h1, h2 {
+h1, h2, h5 {
   font-weight: bold;
-  color: #1d3557;
+  color: var(--cor-principal);
 }
 
-
-.card-title {
-  color: #1d3557;
-}
-
-footer {
-  font-size: 0.9rem;
+.lead {
+  color: var(--cor-destaque);
+  font-weight: 600;
 }
 
 .badge {
   font-size: 1rem;
   padding: 0.6em 1em;
+  background-color: var(--cor-secundaria) !important;
 }
 
-h5 {
-    color: var(--cor-secundaria);
-    font-weight: 700;
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-.lead, .btn-link {
-    color: var(--cor-destaque);
-    font-weight: 700;
+.btn-outline-light {
+  border-color: var(--cor-principal);
+  color: var(--cor-principal);
+}
+.btn-outline-light:hover {
+  background-color: var(--cor-principal);
+  color: #fff;
 }
 
-a, .btn-link:hover {
-    color: var(--cor-principal)
+footer a {
+  color: var(--cor-destaque);
 }
-
-a:hover{
-    color: var(--cor-destaque);
+footer a:hover {
+  color: var(--cor-principal);
 }
-
-
